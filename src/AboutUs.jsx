@@ -9,7 +9,7 @@ function AboutUs()
 <div className="about-content"> 
 <span className="about-tag">ABOUT US</span>
 
-<h2> Building a Better Future <span> Together Rohit</span> </h2>
+<h2> Building a Better Future <span> Together Rohit Sharma</span> </h2>
 
 <p> We are a passionate team dedicated to delivering innovative 
 solutions and exceptional experiences. Our goal is to help people and 
