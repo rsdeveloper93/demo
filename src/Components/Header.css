@@ -14,7 +14,7 @@
   
 
   /* Sticky Header */
-  position: fixed;
+  position: static;
   top: 0;
   z-index: 1000;
   width: 100%;
