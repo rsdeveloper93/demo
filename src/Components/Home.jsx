@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 /* ---------- SEO ---------- */
 const META = {
@@ -118,7 +119,9 @@ const STEPS = [
 ];
 
 /* ---------- Component ---------- */
-export default function IsoCertificationTrainingIndia({ contactHref = "/contact" }) {
+export default function IsoCertificationTrainingIndia({
+  contactHref = "/contact",
+}) {
   const [open, setOpen] = useState(0);
 
   // Meta tags + FAQPage JSON-LD (use react-helmet / Next <Head> instead if your app has it)
@@ -155,45 +158,58 @@ export default function IsoCertificationTrainingIndia({ contactHref = "/contact"
       <header className="eg-hero">
         <div className="eg-wrap">
           <p className="eg-brand">Egrowth India · QHSE &amp; ESG learning</p>
-          <h1>ISO Certification Training India: Practical Courses for Compliance and Careers</h1>
+          <h1>
+            ISO Certification Training India: Practical Courses for Compliance
+            and Careers
+          </h1>
           <p className="eg-lead">
-            ISO certification training India professionals can use at work teaches them to implement,
-            audit and improve management systems built on international standards. Egrowth India, the
-            flagship QHSE and ESG learning venture of Bexex Global, delivers ISO and EHS courses
-            through public programmes and in-house training.
+            ISO certification training India professionals can use at work
+            teaches them to implement, audit and improve management systems
+            built on international standards. Egrowth India, the flagship QHSE
+            and ESG learning venture of Bexex Global, delivers ISO and EHS
+            courses through public programmes and in-house training.
           </p>
           <p>
-            Learn alongside a free community of more than 48,000 practitioners. Enquire now to find the
-            right course for your role or team.
+            Learn alongside a free community of more than 48,000 practitioners.
+            Enquire now to find the right course for your role or team.
           </p>
-          <a className="eg-btn" href={contactHref}>Enquire now</a>
+          <a className="eg-btn" href={"#Our-ISO"}>
+            Enquire now
+          </a>
         </div>
       </header>
 
       <section className="eg-wrap eg-section">
-        <h2>What is ISO certification training, and why do Indian organisations need it?</h2>
+        <h2>
+          What is ISO certification training, and why do Indian organisations
+          need it?
+        </h2>
         <div className="eg-cols">
           <p>
-            ISO certification training teaches professionals how an ISO management system standard works
-            and how to apply, audit or maintain it inside an organisation. Programmes range from
-            awareness sessions to internal auditor, lead implementer and lead auditor exam preparation.
+            ISO certification training teaches professionals how an ISO
+            management system standard works and how to apply, audit or maintain
+            it inside an organisation. Programmes range from awareness sessions
+            to internal auditor, lead implementer and lead auditor exam
+            preparation.
           </p>
           <p>
-            Indian organisations need this skill because customers, regulators and supply-chain partners
-            often expect proof of controlled quality, safety, environmental and information security
-            practices. Trained staff help a business prepare for certification and keep its systems
+            Indian organisations need this skill because customers, regulators
+            and supply-chain partners often expect proof of controlled quality,
+            safety, environmental and information security practices. Trained
+            staff help a business prepare for certification and keep its systems
             effective afterwards.
           </p>
         </div>
       </section>
 
-      <section className="eg-band">
+      <section className="eg-band" id="Our-ISO">
         <div className="eg-wrap eg-section">
           <h2>Our ISO certification training India programmes</h2>
           <p className="eg-intro">
-            Egrowth India builds its standards training around the roles people actually hold, from
-            awareness inductions to internal auditor and lead implementer levels. Courses are mapped to
-            certification bodies and can run at your site or online.
+            Egrowth India builds its standards training around the roles people
+            actually hold, from awareness inductions to internal auditor and
+            lead implementer levels. Courses are mapped to certification bodies
+            and can run at your site or online.
           </p>
           <div className="eg-courses">
             {COURSES.map((c) => (
@@ -215,44 +231,57 @@ export default function IsoCertificationTrainingIndia({ contactHref = "/contact"
       <section className="eg-wrap eg-section">
         <h2>Who should attend ISO and EHS training?</h2>
         <p>
-          ISO and EHS training suits anyone who implements, audits or is accountable for a management
-          system or workplace controls. Typical participants include:
+          ISO and EHS training suits anyone who implements, audits or is
+          accountable for a management system or workplace controls. Typical
+          participants include:
         </p>
         <ul className="eg-list">
-          {ATTENDEES.map((t) => <li key={t}>{t}</li>)}
+          {ATTENDEES.map((t) => (
+            <li key={t}>{t}</li>
+          ))}
         </ul>
         <h3>Who should attend ISO 27001 training?</h3>
         <p>
-          IT security teams, ISMS coordinators, compliance managers and risk owners gain the most.
-          Anyone supporting customer security reviews also benefits.
+          IT security teams, ISMS coordinators, compliance managers and risk
+          owners gain the most. Anyone supporting customer security reviews also
+          benefits.
         </p>
       </section>
 
       <section className="eg-band">
         <div className="eg-wrap eg-section eg-cols">
           <div>
-            <h2>What will you learn, and how does it help careers and compliance?</h2>
+            <h2>
+              What will you learn, and how does it help careers and compliance?
+            </h2>
             <p>
-              ISO training gives you the skills to interpret a standard, assess risk, audit a system and
-              drive continual improvement. You learn to:
+              ISO training gives you the skills to interpret a standard, assess
+              risk, audit a system and drive continual improvement. You learn
+              to:
             </p>
             <ul className="eg-list">
-              {LEARN.map((t) => <li key={t}>{t}</li>)}
+              {LEARN.map((t) => (
+                <li key={t}>{t}</li>
+              ))}
             </ul>
             <p>
-              For careers, our ISO certification training India courses build the skills behind roles
-              such as internal auditor, quality manager, EHS officer and ISMS coordinator. For
-              compliance, trained teams keep documentation, controls and audits ready year after year.
+              For careers, our ISO certification training India courses build
+              the skills behind roles such as internal auditor, quality manager,
+              EHS officer and ISMS coordinator. For compliance, trained teams
+              keep documentation, controls and audits ready year after year.
             </p>
           </div>
           <div>
             <h2>Why choose Egrowth India?</h2>
             <p>
-              Egrowth India combines practical ISO and EHS training with a free community and
-              ready-to-use resources. The benefits are straightforward:
+              Egrowth India combines practical ISO and EHS training with a free
+              community and ready-to-use resources. The benefits are
+              straightforward:
             </p>
             <ul className="eg-list">
-              {WHY.map((t) => <li key={t}>{t}</li>)}
+              {WHY.map((t) => (
+                <li key={t}>{t}</li>
+              ))}
             </ul>
           </div>
         </div>
@@ -260,9 +289,13 @@ export default function IsoCertificationTrainingIndia({ contactHref = "/contact"
 
       <section className="eg-wrap eg-section">
         <h2>How to get started with ISO certification training India</h2>
-        <p>You can start ISO certification training India in four simple steps:</p>
+        <p>
+          You can start ISO certification training India in four simple steps:
+        </p>
         <ol className="eg-steps">
-          {STEPS.map((t) => <li key={t}>{t}</li>)}
+          {STEPS.map((t) => (
+            <li key={t}>{t}</li>
+          ))}
         </ol>
       </section>
 
@@ -270,12 +303,17 @@ export default function IsoCertificationTrainingIndia({ contactHref = "/contact"
         <div className="eg-wrap">
           <h2>Ready to start ISO certification training India?</h2>
           <p>
-            Egrowth India helps you build ISO and EHS skills that hold up in audits and in daily
-            operations. Choose ISO 9001, ISO 14001, ISO 45001 or EHS training, or ask about ISO 27001 for
-            your team.
+            Egrowth India helps you build ISO and EHS skills that hold up in
+            audits and in daily operations. Choose ISO 9001, ISO 14001, ISO
+            45001 or EHS training, or ask about ISO 27001 for your team.
           </p>
-          <a className="eg-btn eg-btn-dark" href={contactHref}>Enquire now</a>
-          <p className="eg-small">Or contact Egrowth India today to take the next step.</p>
+          <Link to="/"
+           className="eg-btn eg-btn-dark" >
+            Enquire now
+          </Link>
+          <p className="eg-small">
+            Or contact Egrowth India today to take the next step.
+          </p>
         </div>
       </section>
 
@@ -283,7 +321,10 @@ export default function IsoCertificationTrainingIndia({ contactHref = "/contact"
         <h2>Frequently Asked Questions</h2>
         <div className="eg-faq">
           {FAQS.map((f, i) => (
-            <div key={f.q} className={`eg-faq-item${open === i ? " is-open" : ""}`}>
+            <div
+              key={f.q}
+              className={`eg-faq-item${open === i ? " is-open" : ""}`}
+            >
               <h3>
                 <button
                   type="button"
