@@ -311,9 +311,9 @@ export default function IsoCertificationTrainingIndia({
            className="eg-btn eg-btn-dark" >
             Enquire now
           </Link>
-          <p className="eg-small">
+          {/* <p className="eg-small">
             Or contact Egrowth India today to take the next step.
-          </p>
+          </p> */}
         </div>
       </section>
 
@@ -351,18 +351,19 @@ const CSS = `
 .eg{--ink:#0b2a4a;--paper:#ffffff;--band:#eef3f9;--signal:#f47b20;--rule:#d3deea;--muted:#4a5b6a;
   font-family:'Public Sans',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:17px}
 .eg *{box-sizing:border-box}
-.eg-wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.eg-wrap{max-width:1080px;margin:0 auto;padding:0 24px;color:#000;}
 .eg-section{padding-top:56px;padding-bottom:56px}
-.eg h1,.eg h2{font-family:'Fraunces',Georgia,serif;line-height:1.15;margin:0 0 20px;letter-spacing:-.01em}
+.eg h1,.eg h2{font-family:'Fraunces',Georgia,serif;line-height:1.15;margin:0 0 20px;letter-spacing:-.01em;color:#2563eb}
 .eg h1{font-size:clamp(2rem,5vw,3.4rem);max-width:20ch}
 .eg h2{font-size:clamp(1.5rem,3vw,2.1rem);max-width:28ch}
 .eg h3{font-size:1.1rem;margin:0 0 8px}
 .eg p{margin:0 0 16px;max-width:68ch}
-.eg-hero{background:var(--ink);color:#f4f6f3;padding:72px 0 64px;border-bottom:8px solid var(--signal)}
+.eg-hero{background:radial-gradient(ellipse at 90% 10%, #dbeafe 0, transparent 40%),
+    linear-gradient(120deg, #f8fbff, #edf4ff);color:#f4f6f3;padding:72px 0 64px;border-bottom:8px solid #2563eb}
 .eg-hero .eg-lead{font-size:1.15rem}
-.eg-brand{font-size:.9rem;color:var(--signal);margin-bottom:20px}
-.eg-btn{display:inline-block;background:var(--signal);color:var(--ink);font-weight:700;text-decoration:none;
-  padding:14px 28px;border-radius:2px;margin-top:8px}
+.eg-brand{font-size:1.2rem;color:#0b2a4a;margin-bottom:20px;font-weight:700}
+.eg-btn{display:inline-block;background:var(--ink);font-weight:700;text-decoration:none;
+  padding:14px 28px;border-radius:8px;margin-top:8px;color:#fff;}
 .eg-btn:hover{filter:brightness(.95)}
 .eg-btn-dark{background:var(--ink);color:#fff}
 .eg a:focus-visible,.eg button:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
@@ -373,7 +374,7 @@ const CSS = `
 .eg-courses{display:grid;gap:0;border-top:1px solid var(--rule)}
 .eg-course{display:grid;grid-template-columns:180px 1fr;gap:28px;padding:28px 0;border-bottom:1px solid var(--rule)}
 .eg-course p{margin:0}
-.eg-plate{align-self:start;border:2px solid var(--ink);background:var(--signal);padding:10px 14px;display:flex;flex-direction:column}
+.eg-plate{align-self:start;border:2px solid #2563eb;background:#2563eb;padding:10px 14px;display:flex;flex-direction:column;border-radius:8px;gap:4px;color:#fff;}
 .eg-plate strong{font-size:1.15rem}
 .eg-plate span{font-size:.85rem}
 .eg-list{padding-left:20px;margin:0 0 20px;max-width:68ch}
@@ -382,7 +383,7 @@ const CSS = `
 .eg-steps{padding-left:0;margin:0;list-style:none;counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .eg-steps li{counter-increment:s;border-top:4px solid var(--ink);padding-top:14px}
 .eg-steps li::before{content:"Step " counter(s);display:block;font-weight:700;margin-bottom:6px;color:var(--muted)}
-.eg-cta{background:var(--signal);padding:56px 0}
+.eg-cta{background:radial-gradient(ellipse at 90% 10%, #dbeafe 0, transparent 40%),    linear-gradient(120deg, #f8fbff, #edf4ff);padding:56px 0}
 .eg-cta h2{max-width:24ch}
 .eg-small{margin:16px 0 0;font-size:.95rem}
 .eg-faq{border-top:1px solid var(--rule);max-width:820px}
