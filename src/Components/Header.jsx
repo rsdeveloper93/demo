@@ -12,7 +12,7 @@ function Header() {
       <header className="header">
         {/* Logo */}
         <Link to="/" className="logo" onClick={closeMenu}>
-          <img src="src/assets/logo.png" alt="Website Logo" />
+           <img src={logo} alt="Website Logo" />
         </Link>
 
         {/* Mobile Menu Button */}
